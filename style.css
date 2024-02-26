@@ -1,0 +1,127 @@
+
+  @font-face {
+    font-family: ILoveYou;
+    src: url(assets/PencilpeteFont-2eE3.ttf);
+  }
+  @font-face {
+    font-family: ILoveYou2;
+    src: url(assets/LoveSign-WylWE.ttf);
+  }
+  
+  * {
+      margin:  0;
+  }
+  
+  html {
+    height: 100%;
+    width: 100%;
+    background: #ffa281;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .navBar {
+    background-color: #ff4141;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    background-image: url('assets/banner.jpg');
+    background-repeat: no-repeat;
+    background-size:contain;
+    border-bottom: solid 10px white;
+  }
+  
+  .title {
+    margin-left: 50px;
+    font-family: love;
+    font-size:xxx-large;
+    color: white;
+    font-family: ILoveYou2;
+  }
+
+  .introHeader, .introImage {
+    flex:  1; 
+    margin:  10px;
+    font-family: Loveletter;
+    font-size: xx-large;
+    color: pink;
+    overflow-wrap: break-word;
+    height: fit-content;
+  }
+  
+  .navThings {
+    font-family: love;
+    font-size:xxx-large;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #5f6aff;
+    border-radius: 20px 20px 20px 20px;
+    border: solid 5px white;
+    width: fit-content;
+    margin-left: 25px;
+  }
+  .Text {
+    width: 40%;
+    padding: 10px;
+    background-image: url(assets/notes.jpg);
+    background-size: cover;
+    margin: 10px;
+    border: dashed 10px rgb(0, 0, 0);
+  }
+  P {
+    margin: 10px;
+    color: #000000;
+    font-size: 30px;
+    font-family: ILoveYou;
+    font-weight: bolder;
+  }
+  .navs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 10px;
+    gap: 25px;
+  }
+
+  .navThings:hover {
+    animation-name: border;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes border {
+    0% {border: 5px solid white;}
+    25% {border: 5px solid rgb(154, 159, 255);}
+    50% {border: 5px dashed rgb(154, 159, 255);}
+    75% {border: 5px dashed rgb(255, 255, 255);}
+    100% {border: 5px solid rgb(255, 255, 255);}
+  }
+
+
+  .cuteImage {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .cuteImage img {
+    width: 15%;
+    height: auto;
+    border: solid 5px white;
+    transition: 1s;
+  }
+
+  img:hover {
+    transform: scale(1.3);
+		z-index: 2;
+    animation-name: border;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
