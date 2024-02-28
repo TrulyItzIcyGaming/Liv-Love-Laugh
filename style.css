@@ -1,5 +1,5 @@
 
-  @font-face {
+@font-face {
     font-family: ILoveYou;
     src: url(assets/PencilpeteFont-2eE3.ttf);
   }
@@ -15,23 +15,34 @@
   html {
     height: 100%;
     width: 100%;
-    background: #ffa281;
+    background-image: url(Images/grounder.jpg);
+    background-repeat: repeat;
   }
   
   a {
     text-decoration: none;
   }
-  
+  @keyframes navbarthing {
+    0% {border-bottom: 10px solid white;}
+    25% {border-bottom: 10px solid rgb(105, 112, 255);}
+    50% {border-bottom: 10px solid rgb(88, 255, 144);}
+    75% {border-bottom: 10px solid rgb(255, 77, 77);}
+    100% {border-bottom: 10px solid rgb(223, 41, 255);}
+  }
   .navBar {
     background-color: #ff4141;
     width: 100%;
     height: 150px;
     display: flex;
     align-items: center;
-    background-image: url('assets/banner.jpg');
-    background-repeat: no-repeat;
-    background-size:contain;
+    background-image: url('Images/blueBackground.jpg');
+    background-size: 500px;
+    background-repeat: repeat;
     border-bottom: solid 10px white;
+    animation-name: navbarthing;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
   
   .title {
@@ -68,6 +79,11 @@
     width: fit-content;
     margin-left: 25px;
   }
+  @keyframes texting {
+    0% {border: dashed 10px rgb(0, 0, 0);}
+    50% {border: solid 10px rgb(255, 101, 101);}
+    100% {border: dashed 10px rgb(107, 206, 255);}
+  }
   .Text {
     width: 40%;
     padding: 10px;
@@ -75,6 +91,12 @@
     background-size: cover;
     margin: 10px;
     border: dashed 10px rgb(0, 0, 0);
+  }
+  .Text:hover {
+    animation-name: texting;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
   P {
     margin: 10px;
