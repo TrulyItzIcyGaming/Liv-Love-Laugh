@@ -40,6 +40,8 @@
     font-size:xxx-large;
     color: white;
     font-family: ILoveYou2;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .introHeader, .introImage {
@@ -121,6 +123,21 @@
     transform: scale(1.3);
 		z-index: 2;
     animation-name: border;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+@keyframes love {
+  0% {
+    color: white;
+  }
+  100% {
+    color: rgb(133, 99, 255);
+  }
+}
+
+  .title:hover {
+    animation-name: love;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
