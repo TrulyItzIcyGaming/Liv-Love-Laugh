@@ -141,6 +141,15 @@
     transition: 1s;
   }
 
+  .artImage img {
+    display: inline-block;
+    margin: 10px;
+    width: 20%;
+    height: auto;
+    border: solid 5px white;
+    transition: 1s;
+  }
+
   img:hover {
     transform: scale(1.3);
 		z-index: 2;
