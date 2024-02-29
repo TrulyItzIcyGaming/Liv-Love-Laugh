@@ -105,6 +105,12 @@
     font-family: ILoveYou;
     font-weight: bolder;
   }
+h {
+    color: #000000;
+    font-size: 30px;
+    font-family: ILoveYou;
+    font-weight: bolder;
+}
   .navs {
     display: flex;
     flex-wrap: wrap;
